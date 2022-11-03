@@ -1,0 +1,61 @@
+Verificar se o java 8 está disponivel na maquina.
+comando no terminal
+
+java -version
+javac - version
+
+Se não estiver instalado, será necessario fazer a instalação.
+Recomendado JDK 8
+
+----- RODANDO O RMI -----
+
+ATENÇÃO PARA CONEXAO EM OUTRO HOST, ALTERAR O IP NO ARQUIVO CLIENT.java e SERVIDOR.java
+
+** WINDOWS **
+
+Compilar todos os java (Interface, Objeto, Cliente e Servidor)
+javac *.java
+
+Gerar o Stub do objeto
+rmic Carro
+
+Registrar o Objeto Stub
+start rmiregistry Carro_Stub
+
+Executar o Objeto Stub
+start rmiregistry
+Terminal vai ficar off...
+
+Novo Terminal
+Executar o Servidor
+java ServidorRMI
+Terminal vai ficar esperando...
+
+Novo Terminal
+Executar o Cliente (Adiciona ou Busca)
+java ClienteAdiciona ou
+java ClienteBusca
+
+** UBUNTU **
+
+Compilar todos os java (Interface, Objeto, Cliente e Servidor)
+javac *java
+
+Gerar o Stub do objeto
+rmic Carro
+
+Registra e Executa o Objeto Stub
+rmiregistry
+Terminal vai ficar off...
+
+Novo Terminal
+Executar o Servidor
+java ServidorRMI
+Terminal vai ficar esperando...
+
+Novo Terminal
+Executar o Cliente (Adiciona ou Busca)
+java ClienteAdiciona ou
+java ClienteBusca
+
+
